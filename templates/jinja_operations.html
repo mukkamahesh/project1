@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!--
+    <center>
+ 
+        <h1>jinja_operations</h1>
+        <h2>if condition</h2>
+        {% if a > 200 % }
+          <h2>enter in if block</h2>
+          <h2>{{a}}</h2>
+        {% endif % }
+ </center>
+
+--> 
+
+<!--
+<center>
+    <h1>if else condition</h1>
+      {% if a > b %}
+        <h2>enter into if block</h2>
+        <h2>{{a}}</h2>
+      {% else %}
+        <h2>enter into else block</h2>
+        <h2>{{b}}</h2>
+      {% endif %}
+
+</center>
+-->
+<!--
+
+<center>
+    <h1>if elif condotion</h1>
+    {% if a > b and a > c %}
+      <h2>enter into if block</h2>
+      <h2>{{a}}</h2>
+    {% elif b > c %}
+       <h2>enter into elif block</h2>
+       <h2>{{b}}</h2>
+    {% else %}
+        <h2>enter into else block</h2>
+        <h2>{{c}}</h2>
+    {% endif %}
+</center>
+-->
+<center>
+    <h1>nested if</h1>
+    {% if a > b %}
+       {% if a > c %}
+       <h2>a is max</h2>
+       {% else %}
+       <h2>c is max</h2>
+       {% endif %}
+    {% else  %}
+       {% if b > c %}
+       <h2>b is max</h2>
+       {% else %}
+       <h2>c is max</h2>
+       {% endif %}
+    {% endif %}
+       
+    
+</center>
+</body>
+
+</html>
